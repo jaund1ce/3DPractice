@@ -100,10 +100,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1299
-  m_MinSize: {x: 908, y: 442}
-  m_MaxSize: {x: 22003, y: 10021}
+  m_MinSize: {x: 909, y: 442}
+  m_MaxSize: {x: 22004, y: 10021}
   vertical: 0
-  controlID: 121
+  controlID: 94
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 122
+  controlID: 95
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -221,8 +221,8 @@ MonoBehaviour:
     y: 0
     width: 514
     height: 1299
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -308,23 +308,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: dea8ffff
-      m_LastClickedID: -22306
-      m_ExpandedIDs: dea8ffff26bcffff46fbffff48fbffffa63e0000be3e0000
+      m_SelectedIDs: 7cc0ffff
+      m_LastClickedID: -16260
+      m_ExpandedIDs: 7cc0ffff68fbffff123f00002e3f0000403f0000703f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Directional Light
+        m_OriginalName: Directional Light
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 16202
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 4
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -408,8 +408,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Scripts
+    m_Folders: []
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -423,7 +422,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c6540000
     m_LastClickedID: 21702
-    m_ExpandedIDs: 000000000a4100000c410000
+    m_ExpandedIDs: 00000000e0410000e2410000e4410000e6410000e8410000ea410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -451,18 +450,18 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000000a4100000c4100002c4100002e410000d044000000450000
+    m_ExpandedIDs: ffffffff00000000e0410000e2410000e4410000e6410000e8410000ea410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: PlayerConditions
-      m_OriginalName: PlayerConditions
+      m_Name: DayNightCycle
+      m_OriginalName: DayNightCycle
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 22848
+      m_UserData: 22266
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -632,9 +631,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 1.8769999, z: 0}
+    m_Target: {x: 2.3662581, y: -1.6096768, z: 5.8943377}
     speed: 2
-    m_Value: {x: 0, y: 1.8769999, z: 0}
+    m_Value: {x: 2.3662581, y: -1.6096768, z: 5.8943377}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -681,13 +680,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0.21381468, y: 0.06734313, z: -0.014776547, w: 0.9744411}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: 0.2138141, y: 0.067342944, z: -0.014776506, w: 0.9744384}
   m_Size:
-    m_Target: 0.9205975
+    m_Target: 5.44322
     speed: 2
-    m_Value: 0.9205975
+    m_Value: 5.44322
   m_Ortho:
     m_Target: 0
     speed: 2
