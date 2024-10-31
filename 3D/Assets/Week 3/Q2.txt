@@ -1,0 +1,20 @@
+- 별도의 UI 스크립트를 만드는 이유에 대해 객체지향적 관점에서 생각해보세요.
+입문 주차에서 말씀하셨듯 구현한 내용이 한 클래스에 모여있으면 확장성과 유지 보수성이 떨어져 기능별로 클래스를 나눌수 있습니다.
+- 인터페이스의 특징에 대해 정리해보고 구현된 로직을 분석해보세요.
+인터페이스는 클래스가 반드시 구현해야 하는 코드의 집합을 정의하여 일관된 구조를 제공합니다. 동일한 인터페이스를 구현하는 클래스들은 모두 같은 메서드 구조를 가지므로, 다양한 클래스가 서로 다른 방식으로 구현되더라도 일관된 방식으로 사용할 수 있습니다.
+Condition 클래스는 게임 내 상태를 관리하는 클래스입니다. curValue, maxValue, startValue, passiveValue, uiBar 등을 통해 상태와 그 상태에 따른 UI 업데이트를 담당합니다.
+상태를 증가시키는 Add 메서드, 감소시키는 Subtract 메서드, 그리고 현재 상태의 백분율을 반환하는 GetPercentage 메서드가 있습니다.
+UIConditions는 게임의 UI와 관련된 상태를 관리합니다. Condition 객체들을 포함하여 health, hunger, stamina와 같은 상태를 한꺼번에 관리할 수 있도록 합니다.
+예를 들어, 플레이어가 이동하거나 전투 중일 때 스태미너와 체력이 변할 수 있으므로, 이를 UI에 반영하는 역할을 UIConditions에서 수행합니다.
+PlayerConditions는 플레이어의 상태를 다루며, Condition 객체들을 통해 체력, 스태미너, 배고픔 등의 상태를 직접 관리합니다.
+PlayerConditions와 UIConditions의 차이점은, PlayerConditions가 실제 상태 값의 변경과 관련된 로직을 다루는 반면, UIConditions는 그 변경을 UI에 반영하는 데 중점을 둔다는 점입니다.
+- 핵심 로직을 분석해보세요. (UI 스크립트 구조, `CampFire`, `DamageIndicator`)
+UI스크립트 구조에 대한 로직 분석은 위에서 진행했습니다.
+CampFire
+피해 간격과 지속성을 InvokeRepeating으로 관리.
+충돌 범위 내 객체들을 OnTriggerEnter와 OnTriggerExit로 추적하여 대상 객체 리스트(things)에 저장.
+DealDamage 메서드에서 IDamagable 객체들에 반복적으로 피해 적용.
+DamageIndicator
+피해 이벤트(onTakeDamage)에 Flash 메서드를 연결하여 피해 발생 시마다 시각적 피드백을 제공.
+Flash 메서드로 피해 표시(빨간색) 및 코루틴 초기화.
+FadeAway 코루틴에서 알파값을 감소시켜 부드럽게 사라지는 시각 효과 제공.
